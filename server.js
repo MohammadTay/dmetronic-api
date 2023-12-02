@@ -50,7 +50,7 @@ app.use((err, req, res, next) => {
     return res.status(errorStatus).send(errorMessage);
 });
 
-app.listen("https://dmetronic.netlify.app", () => {
+app.listen("8800", () => {
     connect()
     console.log('\x1b[32m', '➡  bckend Run ❗');
 });
