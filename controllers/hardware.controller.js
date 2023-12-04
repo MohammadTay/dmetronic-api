@@ -2,8 +2,8 @@ import Hardware from "../models/hardware.model.js";
 import createError from "../utils/createError.js";
 
 export const createHardware = async (req, res, next) => {
-    if (!req.isSeller)
-        return next(createError(403, "Only sellers can create a Hardware!"));
+    // if (!req.isSeller)
+    //     return next(createError(403, "Only sellers can create a Hardware!"));
 
     const newHardware = new Hardware({
         userId: req.userId,
