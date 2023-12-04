@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 
 import userRoute from "./routes/user.route.js"
 import downloadRoute from './routes/download.route.js'
-import hardwareRoute from './routes/download.route.js'
+import hardwareRoute from './routes/hardware.route.js'
 import pinoutRoute from './routes/pinout.route.js'
 import softwareRoute from './routes/software.route.js'
 import tutorialRoute from './routes/tutorial.route.js'
