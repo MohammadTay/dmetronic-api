@@ -30,7 +30,13 @@ const connect = async () => {
 }
 app.use(cors({ origin: "https://dmetronic.netlify.app", credentials: true }));
 app.use(express.json());
-app.use(cookieParser());
+app.use(cookieParser({
+    // secure:false
+    signed: false,
+    secure: true,
+    httpOnly: false,
+    sameSite: 'none'
+}));
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
